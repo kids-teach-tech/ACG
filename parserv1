@@ -1,0 +1,12 @@
+def parser(parser_main, parser_scale, parser_selection):
+  if parser_scale == 1:
+    print("a")
+  if parser_scale == 2:
+    print("a")
+  if parser_scale[0] <= 3 and parser_scale[0] <= 3:
+    for c in range(len(parser_main[parser_selection][1])):
+      print(parser_main[parser_selection][1][c])
+  if parser_scale == 4:
+    for c in range(len(parser_main[parser_selection][1])):
+      for d in range(len(parser_main[parser_selection][1])):
+        print(parser_main[parser_selection][1][c])
