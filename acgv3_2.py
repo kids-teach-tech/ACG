@@ -15,6 +15,7 @@ Item_LifelessEdge = ["Lifeless Edge", 30, 1000]
 Item_Goats_Horn = ["Goat's Horn", 20, 300]
 Item_Astral_Dagger = ["Astral Dagger", 300, 4000]
 Item_Rusty_Dagger = ["Rusty Dagger", 2, 2]
+Item_Dev_Sword = ["Dev Sword", 50, 1]
 
 Weapons4Life = ("Weapons4Life",Item_Dual_Katana,Item_LifelessEdge,Item_Astral_Dagger,Item_Rusty_Dagger)
 
@@ -61,6 +62,8 @@ def shop():
     print("{" + str(s) + "} ", end=(""))
     print(Shops_Main[s][0], end=("\n"))
   shoptype = int(input("=- "))
+  if shoptype == 0:
+    return False
   print("Clerk: Welcome to", Shops_Main[shoptype][0] + "!\nClerk: What can I get for you today?\nYou have", coins, "coins")
   for i in range(1,len(Shops_Main[shoptype])):
     print ("____________________")
